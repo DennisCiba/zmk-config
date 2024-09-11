@@ -50,6 +50,7 @@
     };
 };
 
+/* Benötigt Moergo Fork von ZMK
 / {
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro {
@@ -60,6 +61,7 @@
         };
     };
 };
+*/
 
 
 / {
