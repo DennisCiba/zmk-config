@@ -31,8 +31,9 @@
 #define LAYER_Lower 0
 #endif
 
-/* Custom Device-tree */
-
+#ifndef RGB_STATUS
+#define RGB_STATUS 0
+#endif
 
 
 /* Glove80 system behavior & macros */
@@ -50,18 +51,17 @@
     };
 };
 
-/* Benötigt Moergo Fork von ZMK
 / {
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro {
             label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_STATUS>;
+            bindings
+                = <&rgb_ug RGB_STATUS>;
         };
     };
 };
-*/
 
 
 / {
@@ -173,10 +173,10 @@
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
             label = "MAGIC_HOLD_TAP";
-            #binding-cells = <1>; //<2>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>/*, <&rgb_ug_status_macro>*/;
+            bindings = <&mo>, <&rgb_ug_status_macro>;
         };
     };
 };
@@ -305,7 +305,7 @@
               &kp TAB     &kp J    &kp D     &kp U      &kp A     &kp X                                                              &kp P   &kp H      &kp L    &kp M   &kp W      &kp MINUS
               &kp ESC     &kp C    &kp T     &kp I      &kp E     &kp O                                                              &kp B   &kp N      &kp R    &kp S   &kp G          &kp Q
              &kp CAPS     &kp F    &kp V  &kp LBKT    &kp SQT  &kp SEMI  &kp LSHFT  &kp LCTRL   &mo 2   &mo 2  &kp LGUI  &kp RSHFT   &kp Z   &kp Y  &kp COMMA  &kp DOT   &kp K  &kp LS(EQUAL)
- &magic LAYER_Magic /*0*/  &kp HOME  &kp END  &kp LEFT  &kp RIGHT             &kp BSPC    &kp DEL   &mo 1   &mo 1   &kp RET  &kp SPACE          &kp UP   &kp DOWN    &none   &none      &kp EQUAL
+ &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT             &kp BSPC    &kp DEL   &mo 1   &mo 1   &kp RET  &kp SPACE          &kp UP   &kp DOWN    &none   &none      &kp EQUAL
             >;
         };
 
