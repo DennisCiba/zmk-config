@@ -311,9 +311,9 @@
             bindings = <
                &kp F1    &kp F2   &kp F3    &kp F4     &kp F5                                                                               &kp F6     &kp F7   &kp F8  &kp F9        &kp F10
             &kp CARET    &kp N1   &kp N2    &kp N3     &kp N4    &kp N5                                                             &kp N6  &kp N7     &kp N8   &kp N9  &kp N0       &kp FSLH
-              &kp TAB    &kp J    &kp D     &kp U      &kp A     &kp X                                                              &kp P   &kp H      &kp L    &kp M   &kp W      &kp MINUS
-              &kp ESC    &hrm LGUI C  &hrml 2 T  &hrml 1 I   &hrm LSHIFT E     &kp O                                                              &kp B   &hrm RSHIFT N  &hrml 1 R  &hrml 2 S  &hrm RGUI G          &kp Q
-             &kp CAPS     &kp F    &kp V  &kp LBKT    &kp SQT  &kp SEMI  &kp LSHFT  &kp LCTRL   &mo 2   &mo 2  &kp LGUI  &kp RSHFT   &kp Z   &kp Y  &kp COMMA  &kp DOT   &kp K  &kp LS(EQUAL)
+             &kp CAPS    &kp J    &kp D     &kp U      &kp A     &kp X                                                              &kp P   &kp H      &kp L    &kp M   &kp W      &kp MINUS
+           &kp LSHIFT    &hrm LGUI C  &hrml 2 T  &hrml 1 I   &hrm LSHIFT E     &kp O                                                              &kp B   &hrm RSHIFT N  &hrml 1 R  &hrml 2 S  &hrm RGUI G          &kp Q
+             &kp LGUI     &kp F    &kp V  &kp LBKT    &kp SQT  &kp SEMI    &kp TAB  &kp LCTRL   &mo 2   &mo 2  &kp LGUI    &kp ESC   &kp Z   &kp Y  &kp COMMA  &kp DOT   &kp K  &kp LS(EQUAL)
  &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT             &kp BSPC    &kp DEL   &mo 1   &mo 1   &kp RET  &kp SPACE          &kp UP   &kp DOWN    &none   &none      &kp EQUAL
             >;
         };
