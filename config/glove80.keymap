@@ -295,7 +295,7 @@
             bindings
                 = <&kp ESC>,
                   <&kp LS(DOT)>,
-                  <&kp>;
+                  <&macro_param_1to1> <&kp>;
         };
         vim2: vim2 {
             compatible = "zmk,behavior-macro-two-param";
@@ -303,7 +303,8 @@
             bindings
                 = <&kp ESC>,
                   <&kp LS(DOT)>,
-                  <&kp>, <&kp>;
+                  <&macro_param_1to1> <&kp>,
+                  <&macro_param_1to1> <&kp>;
         };
    };
 };
