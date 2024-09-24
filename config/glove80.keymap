@@ -290,7 +290,7 @@
 / {
     macros {
         vim1: vim1 {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&kp ESC>,
@@ -298,20 +298,12 @@
                   <&kp>;
         };
         vim2: vim2 {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings
                 = <&kp ESC>,
                   <&kp LS(DOT)>,
                   <&kp>, <&kp>;
-        };
-        vim3: vim3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <3>;
-            bindings
-                = <&kp ESC>,
-                  <&kp LS(DOT)>,
-                  <&kp>, <&kp>, <&kp>;
         };
    };
 };
