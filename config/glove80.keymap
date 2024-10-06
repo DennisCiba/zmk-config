@@ -315,6 +315,7 @@
    };
 };
 
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -334,7 +335,7 @@
         layer_Bone3 {
             bindings = <
    &none          &none         &none                &none         &none                                                                                                      &none                &none         &none          &none      &none
-   &none          &none         &none                &none         &none          &none                                                                      &none            &none                &none         &none          &none      &none
+   &none          &none         &none                &none     &kp RA(Y)      &kp RA(X)                                                                                  &kp LS(N4)            &kp RA(E)     &kp RA(V)      &kp RA(B)  &kp RA(N)      &none
  &kp TAB    &kp RA(DOT)  &kp LS(FSLH)           &kp RA(N8)    &kp RA(N9)      &kp GRAVE                                                                   &kp EXCL  &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp KP_EQUAL     &kp LS(N6)      &none
  &kp ESC  &kp RA(MINUS)  &kp KP_SLASH           &kp RA(N7)    &kp RA(N0)   &kp LS(RBKT)                                                              &kp LS(MINUS)       &kp LS(N8)           &kp LS(N9)      &kp FSLH    &kp LS(DOT)  &kp RA(Q)
    &none       &kp BSLH    &kp LS(N4)  &kp RA(NON_US_BSLH)  &kp RA(RBKT)  &kp LS(EQUAL)  &vim1 W  &vim2 W Q  &vim1 Q  &vim1 Q   &vim2 W Q  &vim1 W        &kp RBKT       &kp LS(N5)           &kp LS(N2)  &kp LS(BSLH)  &kp LS(COMMA)      &none
