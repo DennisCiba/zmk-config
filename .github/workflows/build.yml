@@ -27,7 +27,9 @@ jobs:
 
       - name: Build Glove80 combined firmware
         run: |
+          pwd
           ls -lha
+          ls -lha config
           nix-build config -o combined
           ls -lha
           cp combined/glove80.uf2 glove80.uf2
