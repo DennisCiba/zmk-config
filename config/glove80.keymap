@@ -197,7 +197,7 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
-        rhrm: left_homerow_mods {
+        rhrm: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -207,7 +207,7 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
-        lhrml: right_homerow_mods_layer {
+        lhrml: left_homerow_mods_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
