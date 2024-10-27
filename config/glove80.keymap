@@ -187,22 +187,44 @@
 
 / {
     behaviors {
-        hrm: homerow_mods {
+        lhrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+            hold-trigger-on-release = true;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
-        hrml: homerow_mods_layer {
+        rhrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LAYER";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+            hold-trigger-on-release = true;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+        lhrml: homerow_mods_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+            hold-trigger-on-release = true;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
+        rrml: homerow_mods_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+            hold-trigger-on-release = true;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
     };
@@ -244,12 +266,12 @@
 
         layer_Bone1 {
             bindings = <
-               &kp F1       &kp F2         &kp F3     &kp F4     &kp F5                                                                                           &kp F6     &kp F7         &kp F8       &kp F9        &kp F10
-            &kp CARET       &kp N1         &kp N2     &kp N3     &kp N4    &kp N5                                                                      &kp N6     &kp N7     &kp N8         &kp N9       &kp N0       &kp FSLH
-             &kp CAPS        &kp J          &kp D      &kp U      &kp A     &kp X                                                                       &kp P      &kp H      &kp L          &kp M        &kp W      &kp MINUS
-           &kp LSHIFT  &hrm LSHIFT C  &hrm LGUI T  &hrml 1 I  &hrml 2 E     &kp O                                                                       &kp B  &hrml 2 N  &hrml 1 R  &hrm RGUI S  &hrm RSHIFT G          &kp Q
-             &kp LGUI        &kp F          &kp V   &kp LBKT    &kp SQT  &kp SEMI    &kp TAB  &kp LCTRL     &kp LALT    &kp RALT  &kp RCTRL    &kp ESC  &kp Z      &kp Y  &kp COMMA        &kp DOT        &kp K  &kp LS(EQUAL)
- &magic LAYER_Magic 0     &kp HOME        &kp END   &kp LEFT  &kp RIGHT             &kp BSPC    &kp DEL   &kp LSHIFT  &kp RSHIFT    &kp RET  &kp SPACE            &kp UP   &kp DOWN         &none        &none      &kp EQUAL
+               &kp F1          &kp F2        &kp F3      &kp F4      &kp F5                                                                                            &kp F6      &kp F7        &kp F8       &kp F9        &kp F10
+            &kp CARET          &kp N1        &kp N2      &kp N3      &kp N4    &kp N5                                                                      &kp N6      &kp N7      &kp N8        &kp N9       &kp N0       &kp FSLH
+             &kp CAPS           &kp J         &kp D       &kp U       &kp A     &kp X                                                                       &kp P       &kp H       &kp L         &kp M        &kp W      &kp MINUS
+           &kp LSHIFT  &lhrm LSHIFT C  &lhrm LGUI T  &lhrml 1 I  &lhrml 2 E     &kp O                                                                       &kp B  &rhrml 2 N  &rhrml 1 R  &rhrm RGUI S  &rhrm RSHIFT G          &kp Q
+             &kp LGUI           &kp F         &kp V    &kp LBKT     &kp SQT  &kp SEMI    &kp TAB  &kp LCTRL     &kp LALT    &kp RALT  &kp RCTRL    &kp ESC  &kp Z       &kp Y   &kp COMMA       &kp DOT        &kp K  &kp LS(EQUAL)
+ &magic LAYER_Magic 0        &kp HOME       &kp END    &kp LEFT   &kp RIGHT             &kp BSPC    &kp DEL   &kp LSHIFT  &kp RSHIFT    &kp RET  &kp SPACE             &kp UP    &kp DOWN        &none        &none      &kp EQUAL
             >;
         };
 
