@@ -192,7 +192,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
-            hold-trigger-on-release = true;
+            hold-trigger-on-release;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -202,7 +202,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             hold-trigger-key-positions = <LEFT_HAND_KEYS>;
-            hold-trigger-on-release = true;
+            hold-trigger-on-release;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -212,7 +212,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
-            hold-trigger-on-release = true;
+            hold-trigger-on-release;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
@@ -222,7 +222,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             hold-trigger-key-positions = <LEFT_HAND_KEYS>;
-            hold-trigger-on-release = true;
+            hold-trigger-on-release;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
