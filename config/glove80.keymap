@@ -178,6 +178,9 @@
     };
 };
 
+#define HRM_TAPPING_TERM_MS 280
+#define HRM_QUICK_TAP_MS 200
+#define HRM_REQUIRE_PRIOR_IDLE_MS 175
 
 / {
     behaviors {
@@ -187,8 +190,9 @@
             flavor = "balanced";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
             hold-trigger-on-release;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <HRM_TAPPING_TERM_MS>;
+            quick-tap-ms = <HRM_QUICK_TAP_MS>;
+            require-prior-idle-ms = <HRM_REQUIRE_PRIOR_IDLE_MS>;
             bindings = <&kp>, <&kp>;
         };
         rhrm: right_homerow_mods {
@@ -197,8 +201,9 @@
             flavor = "balanced";
             hold-trigger-key-positions = <LEFT_HAND_KEYS>;
             hold-trigger-on-release;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <HRM_TAPPING_TERM_MS>;
+            quick-tap-ms = <HRM_QUICK_TAP_MS>;
+            require-prior-idle-ms = <HRM_REQUIRE_PRIOR_IDLE_MS>;
             bindings = <&kp>, <&kp>;
         };
         lhrml: left_homerow_mods_layer {
@@ -207,8 +212,9 @@
             flavor = "balanced";
             hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
             hold-trigger-on-release;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <HRM_TAPPING_TERM_MS>;
+            quick-tap-ms = <HRM_QUICK_TAP_MS>;
+            require-prior-idle-ms = <HRM_REQUIRE_PRIOR_IDLE_MS>;
             bindings = <&mo>, <&kp>;
         };
         rhrml: right_homerow_mods_layer {
@@ -217,8 +223,9 @@
             flavor = "balanced";
             hold-trigger-key-positions = <LEFT_HAND_KEYS>;
             hold-trigger-on-release;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <HRM_TAPPING_TERM_MS>;
+            quick-tap-ms = <HRM_QUICK_TAP_MS>;
+            require-prior-idle-ms = <HRM_REQUIRE_PRIOR_IDLE_MS>;
             bindings = <&mo>, <&kp>;
         };
     };
