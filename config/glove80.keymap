@@ -168,7 +168,7 @@
 };
 
 // Homerow Mods
-#define HRM_FLAVOR "hold-preferred"
+#define HRM_FLAVOR "balanced"
 #define HRM_TAPPING_TERM_MS 300
 #define HRM_QUICK_TAP_MS 200
 #define HRM_REQUIRE_PRIOR_IDLE_MS 150
