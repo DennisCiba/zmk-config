@@ -248,7 +248,7 @@
                   <&kp RET>;
         };
         vim1a: vim1a {
-            compatible = "zmk,behavior-macro-two-param";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <35>;
             tap-ms = <35>;
