@@ -249,7 +249,7 @@
         };
         vim1a: vim1a {
             compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             wait-ms = <35>;
             tap-ms = <35>;
             bindings
