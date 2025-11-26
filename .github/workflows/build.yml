@@ -35,7 +35,7 @@ jobs:
           cp combined/glove80.uf2 glove80.uf2
 
       - name: Upload result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: glove80.uf2
           path: glove80.uf2
