@@ -171,7 +171,7 @@
 #define HRM_FLAVOR "balanced"
 #define HRM_TAPPING_TERM_MS 300
 #define HRM_QUICK_TAP_MS 200
-#define HRM_REQUIRE_PRIOR_IDLE_MS 1
+#define HRM_REQUIRE_PRIOR_IDLE_MS 125
 
 / {
     behaviors {
@@ -283,12 +283,12 @@
 
         layer_Bone1 {
             bindings = <
-               &kp F1          &kp F2        &kp F3      &kp F4      &kp F5                                                                                            &kp F6      &kp F7        &kp F8       &kp F9        &kp F10
-            &kp CARET          &kp N1        &kp N2      &kp N3      &kp N4    &kp N5                                                                      &kp N6      &kp N7      &kp N8        &kp N9       &kp N0       &kp FSLH
-             &kp CAPS           &kp J         &kp D       &kp U       &kp A     &kp X                                                                       &kp P       &kp H       &kp L         &kp M        &kp W      &kp MINUS
-           &caps_word  &lhrm LSHIFT C  &lhrm LGUI T  &lhrml 1 I  &lhrml 2 E     &kp O                                                                       &kp B  &rhrml 2 N  &rhrml 1 R  &rhrm RGUI S  &rhrm RSHIFT G          &kp Q
-             &kp LGUI           &kp F         &kp V    &kp LBKT     &kp SQT  &kp SEMI    &kp TAB  &kp LCTRL     &kp LALT    &kp RALT  &kp RCTRL    &kp ESC  &kp Z       &kp Y   &kp COMMA       &kp DOT        &kp K  &kp LS(EQUAL)
- &magic LAYER_Magic 0        &kp HOME       &kp END    &kp LEFT   &kp RIGHT             &kp BSPC    &kp DEL   &kp LSHIFT  &kp RSHIFT    &kp RET  &kp SPACE             &kp UP    &kp DOWN        &none        &none      &to LAYER_Game
+               &kp F1          &kp F2        &kp F3      &kp F4      &kp F5                                                                                            &kp F6      &kp F7        &kp F8         &kp F9        &kp F10
+            &kp CARET          &kp N1        &kp N2      &kp N3      &kp N4    &kp N5                                                                      &kp N6      &kp N7      &kp N8        &kp N9         &kp N0       &kp FSLH
+             &kp CAPS           &kp J         &kp D       &kp U       &kp A     &kp X                                                                       &kp P       &kp H       &kp L         &kp M          &kp W      &kp MINUS
+           &caps_word  &lhrm LSHIFT C  &lhrm LGUI T  &lhrml 1 I  &lhrml 2 E     &kp O                                                                       &kp B  &rhrml 2 N  &rhrml 1 R  &rhrm RGUI S &rhrm RSHIFT G          &kp Q
+             &kp LGUI           &kp F         &kp V    &kp LBKT     &kp SQT  &kp SEMI    &kp TAB  &kp LCTRL     &kp LALT    &kp RALT  &kp RCTRL    &kp ESC  &kp Z       &kp Y   &kp COMMA       &kp DOT          &kp K  &kp LS(EQUAL)
+ &magic LAYER_Magic 0        &kp HOME       &kp END    &kp LEFT   &kp RIGHT             &kp BSPC    &kp DEL   &kp LSHIFT  &kp RSHIFT    &kp RET  &kp SPACE             &kp UP    &kp DOWN        &none           &none &to LAYER_Game
             >;
         };
 
